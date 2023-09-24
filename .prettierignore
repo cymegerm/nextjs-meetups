@@ -1,0 +1,4 @@
+# add files here to ignore them from prettier formatting
+
+/.next
+/dist
