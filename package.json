@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "drizzle-orm": "^0.28.6",
@@ -29,5 +30,9 @@
     "postcss": "8.4.30",
     "prettier": "^3.0.3",
     "typescript": "5.2.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
