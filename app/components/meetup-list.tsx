@@ -7,7 +7,7 @@ interface Props {
 
 const MeetupList = ({ meetups }: Props) => {
   return (
-    <ul className="max-w-lg mx-auto">
+    <ul className="max-w-lg">
       {meetups.map((meetup: Meetup) => (
         <MeetupItem
           key={meetup.id}
