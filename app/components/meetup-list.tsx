@@ -1,23 +1,20 @@
 import React from 'react';
+import MeetupItem, { Meetup } from '@/app/components/meetup-item';
 
-type Meetup = {
-  id: string;
-  title: string;
-  description: string;
-};
-
-type MeetupListProps = {
+interface Props {
   meetups: Meetup[];
-};
+}
 
-const MeetupList: React.FC<MeetupListProps> = ({ meetups }) => {
+const MeetupList = ({ meetups }: Props) => {
   return (
-    <ul>
-      {meetups.map((meetup) => (
-        <li key={meetup.id}>
-          <h3>{meetup.title}</h3>
-          <p>{meetup.description}</p>
-        </li>
+    <ul className='max-w-lg mx-auto'>
+      {meetups.map((meetup: Meetup) => (
+        <MeetupItem key={meetup.id}
+                    id={meetup.id}
+                    imageUrl={meetup.imageUrl}
+                    imageAlt={meetup.imageAlt}
+                    title={meetup.title}
+                    address={meetup.address} />
       ))}
     </ul>
   );
