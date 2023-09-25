@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Card } from '@/app/components/ui/card';
 
 export interface Meetup {
   id: string;
@@ -11,16 +12,18 @@ export interface Meetup {
 const MeetupItem = (meetup: Meetup) => {
   return (
     <li className="mb-12">
-      <h3>{meetup.title}</h3>
-      <Image
-        src={meetup.imageUrl}
-        alt={meetup.imageAlt}
-        width={600}
-        height={0}
-        layout="responsive"
-        priority
-      />
-      <p>{meetup.address}</p>
+      <Card>
+        <h3>{meetup.title}</h3>
+        <Image
+          src={meetup.imageUrl}
+          alt={meetup.imageAlt}
+          width={600}
+          height={0}
+          layout="responsive"
+          priority
+        />
+        <p>{meetup.address}</p>
+      </Card>
     </li>
   );
 };
