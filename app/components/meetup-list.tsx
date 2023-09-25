@@ -7,14 +7,16 @@ interface Props {
 
 const MeetupList = ({ meetups }: Props) => {
   return (
-    <ul className='max-w-lg mx-auto'>
+    <ul className="max-w-lg mx-auto">
       {meetups.map((meetup: Meetup) => (
-        <MeetupItem key={meetup.id}
-                    id={meetup.id}
-                    imageUrl={meetup.imageUrl}
-                    imageAlt={meetup.imageAlt}
-                    title={meetup.title}
-                    address={meetup.address} />
+        <MeetupItem
+          key={meetup.id}
+          id={meetup.id}
+          imageUrl={meetup.imageUrl}
+          imageAlt={meetup.imageAlt}
+          title={meetup.title}
+          address={meetup.address}
+        />
       ))}
     </ul>
   );
