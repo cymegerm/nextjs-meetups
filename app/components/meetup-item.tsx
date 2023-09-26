@@ -19,22 +19,22 @@ const MeetupItem = (meetup: Meetup) => {
   }
 
   return (
-    <li className="mb-12">
+    <li className='mb-12'>
       <Card>
-        <h2 className="text-2xl text-center p-3">{meetup.title}</h2>
-        <div className="flex max-h-48 sm:max-h-72">
+        <h2 className='text-2xl text-center p-3'>{meetup.title}</h2>
+        <div className='flex max-h-48 sm:max-h-72'>
           <Image
             src={meetup.imageUrl}
             alt={meetup.imageAlt}
             width={600}
             height={0}
             style={{ minHeight: '10rem', objectFit: 'cover' }}
-            placeholder="blur"
+            placeholder='blur'
             blurDataURL={meetup.blurDataURL}
           />
         </div>
-        <p className="text-center pt-3 pb-2">{meetup.address}</p>
-        <div className="flex justify-center pt-2 pb-4">
+        <p className='text-center pt-3 pb-2'>{meetup.address}</p>
+        <div className='flex justify-center pt-2 pb-4'>
           <Button onClick={handleClick}>Reserve Seat</Button>
         </div>
       </Card>
