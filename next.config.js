@@ -6,10 +6,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'upload.wikimedia.org',
         port: '',
-        pathname: '/wikipedia/commons/thumb/d/d3/**'
-      }
-    ]
-  }
+        pathname: '/wikipedia/commons/**',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

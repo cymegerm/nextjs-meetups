@@ -13,16 +13,18 @@ const MeetupItem = (meetup: Meetup) => {
   return (
     <li className="mb-12">
       <Card>
-        <h3>{meetup.title}</h3>
-        <Image
-          src={meetup.imageUrl}
-          alt={meetup.imageAlt}
-          width={600}
-          height={0}
-          layout="responsive"
-          priority
-        />
-        <p>{meetup.address}</p>
+        <h2 className="text-2xl text-center p-3">{meetup.title}</h2>
+        <div className="flex max-h-48 sm:max-h-72">
+          <Image
+            src={meetup.imageUrl}
+            alt={meetup.imageAlt}
+            width={600}
+            height={0}
+            style={{ minHeight: '10rem', objectFit: 'cover' }}
+            priority
+          />
+        </div>
+        <p className="text-center p-2">{meetup.address}</p>
       </Card>
     </li>
   );
