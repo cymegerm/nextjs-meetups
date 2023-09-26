@@ -6,6 +6,7 @@ export const fakeMeetups: Meetup[] = [
     title: 'Montreal – Canada',
     imageUrl:
       'https://upload.wikimedia.org/wikipedia/commons/4/4f/Montreal-canada-parc-urban.jpg',
+    blurDataURL: '/Montreal-canada-parc-urban-placeholder.webp',
     address: 'École de technologie supérieure ÉTS',
     imageAlt: 'skyline of Montreal',
   },
@@ -14,6 +15,8 @@ export const fakeMeetups: Meetup[] = [
     title: 'San Francisco – USA',
     imageUrl:
       'https://upload.wikimedia.org/wikipedia/commons/6/61/San_Francisco_from_the_Marin_Headlands_in_August_2022.jpg',
+    blurDataURL:
+      '/San_Francisco_from_the_Marin_Headlands_in_August_2022-placeholder.webp',
     address: 'Carnegie Mellon University Silicon Valley',
     imageAlt: 'skyline of San Francisco',
   },
@@ -22,6 +25,7 @@ export const fakeMeetups: Meetup[] = [
     title: 'London – UK',
     imageUrl:
       'https://upload.wikimedia.org/wikipedia/commons/1/14/City_of_London_skyline_27.12.2019.jpg',
+    blurDataURL: '/City_of_London_skyline_27.12.2019-placeholder.webp',
     address: 'University College London',
     imageAlt: 'skyline of London',
   },
@@ -30,6 +34,8 @@ export const fakeMeetups: Meetup[] = [
     title: 'Paris – France',
     imageUrl:
       'https://upload.wikimedia.org/wikipedia/commons/0/08/Seine_and_Eiffel_Tower_from_Tour_Saint_Jacques_2013-08.JPG',
+    blurDataURL:
+      '/Seine_and_Eiffel_Tower_from_Tour_Saint_Jacques_2013-08-placeholder.webp',
     address: 'Institut Polytechnique de Paris',
     imageAlt: 'skyline of Paris',
   },
@@ -38,6 +44,7 @@ export const fakeMeetups: Meetup[] = [
     title: 'Berlin – Germany',
     imageUrl:
       'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aerial_view_of_Berlin_%2832881394137%29.jpg',
+    blurDataURL: '/Aerial_view_of_Berlin_32881394137-placeholder.webp',
     address: 'Technical University of Berlin',
     imageAlt: 'skyline of Berlin',
   },

@@ -1,6 +1,6 @@
 {
   "extends": [
-    "prettier",
-    "next"
+    "next",
+    "prettier"
   ]
 }
