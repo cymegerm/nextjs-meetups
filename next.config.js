@@ -4,9 +4,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'upload.wikimedia.org',
+        hostname: 'newk.mo.cloudinary.net',
         port: '',
-        pathname: '/wikipedia/commons/**',
+        pathname: '/**',
       },
     ],
   },

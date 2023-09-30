@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Card } from '@/app/components/ui/card';
-import { Button } from '@/app/components/ui/button';
+import NavButton from '@/app/components/nav-button';
 
 export interface Meetup {
   id: string;
@@ -14,10 +14,6 @@ export interface Meetup {
 }
 
 const MeetupItem = (meetup: Meetup) => {
-  function handleClick() {
-    alert('yes');
-  }
-
   return (
     <li className='mb-12'>
       <Card>
@@ -35,7 +31,7 @@ const MeetupItem = (meetup: Meetup) => {
         </div>
         <p className='text-center pt-3 pb-2'>{meetup.address}</p>
         <div className='flex justify-center pt-2 pb-4'>
-          <Button onClick={handleClick}>Reserve Seat</Button>
+          <NavButton route={meetup.id} text='Reserve Seat' />
         </div>
       </Card>
     </li>
