@@ -8,7 +8,7 @@ interface Props {
 const MeetupList = ({ meetups }: Props) => {
   return (
     <ul className='max-w-lg'>
-      {meetups.map((meetup: Meetup) => (
+      {meetups.map((meetup: Meetup, i: number) => (
         <MeetupItem
           key={meetup.id}
           id={meetup.id}
@@ -17,6 +17,7 @@ const MeetupList = ({ meetups }: Props) => {
           imageAlt={meetup.imageAlt}
           title={meetup.title}
           address={meetup.address}
+          imgPriority={i <= 1}
         />
       ))}
     </ul>

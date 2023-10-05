@@ -11,6 +11,7 @@ export interface Meetup {
   imageAlt: string;
   title: string;
   address: string;
+  imgPriority: boolean;
 }
 
 const MeetupItem = (meetup: Meetup) => {
@@ -24,9 +25,12 @@ const MeetupItem = (meetup: Meetup) => {
             alt={meetup.imageAlt}
             width={600}
             height={0}
-            style={{ minHeight: '10rem', objectFit: 'cover' }}
-            placeholder='blur'
-            blurDataURL={meetup.blurDataURL}
+            style={{
+              minHeight: '10rem',
+              objectFit: 'cover',
+              backgroundImage: `url(${meetup.blurDataURL})`,
+            }}
+            priority={meetup.imgPriority}
           />
         </div>
         <p className='text-center pt-3 pb-2'>{meetup.address}</p>
