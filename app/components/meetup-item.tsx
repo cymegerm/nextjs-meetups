@@ -6,12 +6,12 @@ import NavButton from '@/app/components/nav-button';
 
 export interface Meetup {
   id: string;
-  imageUrl: string;
-  blurDataURL: string;
-  imageAlt: string;
   title: string;
   address: string;
-  imgPriority: boolean;
+  blurImageUrl: string;
+  imageUrl: string;
+  imageAlt: string;
+  imagePriority: boolean;
 }
 
 const MeetupItem = (meetup: Meetup) => {
@@ -21,6 +21,7 @@ const MeetupItem = (meetup: Meetup) => {
         <h2 className='text-2xl text-center p-3'>{meetup.title}</h2>
         <div className='flex max-h-48 sm:max-h-72'>
           <Image
+            priority={meetup.imagePriority}
             src={meetup.imageUrl}
             alt={meetup.imageAlt}
             width={600}
@@ -28,9 +29,8 @@ const MeetupItem = (meetup: Meetup) => {
             style={{
               minHeight: '10rem',
               objectFit: 'cover',
-              backgroundImage: `url(${meetup.blurDataURL})`,
+              backgroundImage: `url(${meetup.blurImageUrl})`,
             }}
-            priority={meetup.imgPriority}
           />
         </div>
         <p className='text-center pt-3 pb-2'>{meetup.address}</p>

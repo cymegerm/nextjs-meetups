@@ -12,12 +12,12 @@ const MeetupList = ({ meetups }: Props) => {
         <MeetupItem
           key={meetup.id}
           id={meetup.id}
-          imageUrl={meetup.imageUrl}
-          blurDataURL={meetup.blurDataURL}
-          imageAlt={meetup.imageAlt}
           title={meetup.title}
           address={meetup.address}
-          imgPriority={i <= 1}
+          blurImageUrl={meetup.blurImageUrl}
+          imageUrl={meetup.imageUrl}
+          imageAlt={meetup.imageAlt}
+          imagePriority={i <= 1}
         />
       ))}
     </ul>
