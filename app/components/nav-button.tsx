@@ -1,16 +1,15 @@
-import { Button } from '@/app/components/ui/button';
+import { Button } from '@/app/components/shadcn-ui/button';
+import { useRouter } from 'next/navigation';
 
-interface Props {
+interface NavButtonProps {
   route: string;
   text: string;
 }
 
-const NavButton = ({ route, text }: Props) => {
-  const handleClick = () => {
-    alert(route);
-  };
+const NavButton = ({ route, text }: NavButtonProps) => {
+  const router = useRouter();
 
-  return <Button onClick={handleClick}>{text}</Button>;
+  return <Button onClick={() => router.push(route)}>{text}</Button>;
 };
 
 export default NavButton;

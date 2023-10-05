@@ -1,11 +1,11 @@
 import React from 'react';
 import MeetupItem, { Meetup } from '@/app/components/meetup-item';
 
-interface Props {
+interface MeetupListProps {
   meetups: Meetup[];
 }
 
-const MeetupList = ({ meetups }: Props) => {
+const MeetupList = ({ meetups }: MeetupListProps) => {
   return (
     <ul className='max-w-lg'>
       {meetups.map((meetup: Meetup, i: number) => (

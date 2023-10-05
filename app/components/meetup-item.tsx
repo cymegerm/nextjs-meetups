@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Card } from '@/app/components/ui/card';
+import { Card } from '@/app/components/shadcn-ui/card';
 import NavButton from '@/app/components/nav-button';
 
 export interface Meetup {
@@ -35,7 +35,7 @@ const MeetupItem = (meetup: Meetup) => {
         </div>
         <p className='text-center pt-3 pb-2'>{meetup.address}</p>
         <div className='flex justify-center pt-2 pb-4'>
-          <NavButton route={meetup.id} text='Reserve Seat' />
+          <NavButton route={`/rsvp?event=${meetup.id}`} text='Reserve Seat' />
         </div>
       </Card>
     </li>
