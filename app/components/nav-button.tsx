@@ -1,4 +1,4 @@
-import { Button } from '@/app/components/shadcn-ui/button';
+import { Button } from '@/components/shadcn-ui/button';
 import { useRouter } from 'next/navigation';
 
 interface NavButtonProps {
