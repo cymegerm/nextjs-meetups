@@ -1,5 +1,5 @@
 import MeetupList from '@/components/meetup-list';
-import { fakeMeetups } from '@/components/fakeMeetups';
+import { fakeMeetups } from '@/api/_fakeMeetups';
 
 export default function Home() {
   return (
