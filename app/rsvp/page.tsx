@@ -1,7 +1,7 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { fakeMeetups } from '@/app/components/fakeMeetups';
+import { fakeMeetups } from '@/components/fakeMeetups';
 
 export default function Rsvp() {
   const searchParams = useSearchParams();

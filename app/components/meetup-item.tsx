@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { Card } from '@/app/components/shadcn-ui/card';
-import NavButton from '@/app/components/nav-button';
+import { Card } from '@/components/shadcn-ui/card';
+import NavButton from '@/components/nav-button';
 
 export interface Meetup {
   id: string;

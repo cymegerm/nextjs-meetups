@@ -1,4 +1,4 @@
-import { Meetup } from '@/app/components/meetup-item';
+import { Meetup } from '@/components/meetup-item';
 
 export const fakeMeetups: Meetup[] = [
   {

@@ -1,5 +1,5 @@
 import React from 'react';
-import MeetupItem, { Meetup } from '@/app/components/meetup-item';
+import MeetupItem, { Meetup } from '@/components/meetup-item';
 
 interface MeetupListProps {
   meetups: Meetup[];
