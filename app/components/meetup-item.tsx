@@ -12,6 +12,7 @@ export interface Meetup {
   imageUrl: string;
   imageAlt: string;
   imagePriority: boolean;
+  maxSeatsPerEmail: number;
 }
 
 const MeetupItem = (meetup: Meetup) => {
@@ -35,7 +36,10 @@ const MeetupItem = (meetup: Meetup) => {
         </div>
         <p className='text-center pt-3 pb-2'>{meetup.address}</p>
         <div className='flex justify-center pt-2 pb-4'>
-          <NavButton route={`/rsvp?event=${meetup.id}`} text='Reserve Seat' />
+          <NavButton
+            route={`/rsvp?event=${meetup.id}`}
+            text='Reserve Seat(s)'
+          />
         </div>
       </Card>
     </li>

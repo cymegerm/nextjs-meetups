@@ -10,6 +10,7 @@ export const fakeMeetups: Meetup[] = [
     address: 'École de technologie supérieure ÉTS',
     imageAlt: 'skyline of Montreal',
     imagePriority: false,
+    maxSeatsPerEmail: 6,
   },
   {
     id: 'm2',
@@ -20,6 +21,7 @@ export const fakeMeetups: Meetup[] = [
     address: 'Carnegie Mellon University Silicon Valley',
     imageAlt: 'skyline of San Francisco',
     imagePriority: false,
+    maxSeatsPerEmail: 12,
   },
   {
     id: 'm3',
@@ -30,6 +32,7 @@ export const fakeMeetups: Meetup[] = [
     address: 'University College London',
     imageAlt: 'skyline of London',
     imagePriority: false,
+    maxSeatsPerEmail: 10,
   },
   {
     id: 'm4',
@@ -40,6 +43,7 @@ export const fakeMeetups: Meetup[] = [
     address: 'Institut Polytechnique de Paris',
     imageAlt: 'skyline of Paris',
     imagePriority: false,
+    maxSeatsPerEmail: 10,
   },
   {
     id: 'm5',
@@ -50,5 +54,6 @@ export const fakeMeetups: Meetup[] = [
     address: 'Technical University of Berlin',
     imageAlt: 'skyline of Berlin',
     imagePriority: false,
+    maxSeatsPerEmail: 8,
   },
 ];
