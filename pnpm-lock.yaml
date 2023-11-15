@@ -22,7 +22,7 @@ dependencies:
     version: 2.0.0
   drizzle-orm:
     specifier: ^0.28.6
-    version: 0.28.6(postgres@3.4.0)
+    version: 0.28.6(postgres@3.4.3)
   jotai:
     specifier: ^2.4.3
     version: 2.4.3(@types/react@18.2.22)(react@18.2.0)
@@ -33,8 +33,8 @@ dependencies:
     specifier: 13.5.2
     version: 13.5.2(react-dom@18.2.0)(react@18.2.0)
   postgres:
-    specifier: ^3.4.0
-    version: 3.4.0
+    specifier: ^3.4.3
+    version: 3.4.3
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -1185,7 +1185,7 @@ packages:
       - supports-color
     dev: true
 
-  /drizzle-orm@0.28.6(postgres@3.4.0):
+  /drizzle-orm@0.28.6(postgres@3.4.3):
     resolution: {integrity: sha512-yBe+F9htrlYER7uXgDJUQsTHFoIrI5yMm5A0bg0GiZ/kY5jNXTWoEy4KQtg35cE27sw1VbgzoMWHAgCckUUUww==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
@@ -1247,7 +1247,7 @@ packages:
       sqlite3:
         optional: true
     dependencies:
-      postgres: 3.4.0
+      postgres: 3.4.3
     dev: false
 
   /electron-to-chromium@1.4.528:
@@ -2730,8 +2730,9 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /postgres@3.4.0:
-    resolution: {integrity: sha512-d7UtSoCg4hUtzxM9aRi3J8BrM6t0h4bQmgAHG96cDCNpP9CnnWQRdRl7WWNvKs0oOaQU2InGoOi1jETmdZK02g==}
+  /postgres@3.4.3:
+    resolution: {integrity: sha512-iHJn4+M9vbTdHSdDzNkC0crHq+1CUdFhx+YqCE+SqWxPjm+Zu63jq7yZborOBF64c8pc58O5uMudyL1FQcHacA==}
+    engines: {node: '>=12'}
     dev: false
 
   /prelude-ls@1.2.1:
