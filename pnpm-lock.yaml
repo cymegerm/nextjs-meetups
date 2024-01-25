@@ -24,8 +24,8 @@ dependencies:
     specifier: ^0.28.6
     version: 0.28.6(postgres@3.4.3)
   jotai:
-    specifier: ^2.6.0
-    version: 2.6.0(@types/react@18.2.22)(react@18.2.0)
+    specifier: ^2.6.3
+    version: 2.6.3(@types/react@18.2.22)(react@18.2.0)
   lucide-react:
     specifier: ^0.279.0
     version: 0.279.0(react@18.2.0)
@@ -2241,8 +2241,8 @@ packages:
     hasBin: true
     dev: false
 
-  /jotai@2.6.0(@types/react@18.2.22)(react@18.2.0):
-    resolution: {integrity: sha512-Vt6hsc04Km4j03l+Ax+Sc+FVft5cRJhqgxt6GTz6GM2eM3DyX3CdBdzcG0z2FrlZToL1/0OAkqDghIyARWnSuQ==}
+  /jotai@2.6.3(@types/react@18.2.22)(react@18.2.0):
+    resolution: {integrity: sha512-0htSJ2d6426ZdSEYHncJHXY6Lkgde1Hc2HE/ADIRi9d2L3hQL+jLKY1LkWBMeCNyOSlKH8+1u/Gc33Ox0uq21Q==}
     engines: {node: '>=12.20.0'}
     peerDependencies:
       '@types/react': '>=17.0.0'
